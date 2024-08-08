@@ -1,4 +1,4 @@
-package com.example.subdrive.test;
+package com.example.subdrive.controller;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;

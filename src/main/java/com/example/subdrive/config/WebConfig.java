@@ -1,4 +1,4 @@
-package com.example.subdrive;
+package com.example.subdrive.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

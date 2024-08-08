@@ -1,4 +1,4 @@
-package com.example.subdrive.login;
+package com.example.subdrive.controller;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
