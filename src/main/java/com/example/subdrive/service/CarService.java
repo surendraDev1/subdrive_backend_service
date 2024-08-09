@@ -1,6 +1,6 @@
 package com.example.subdrive.service;
 
-import com.example.subdrive.entities.Car;
+import com.example.subdrive.entity.Car;
 import com.example.subdrive.repositories.CarRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -12,10 +12,10 @@ import java.util.Optional;
 public class CarService {
     @Autowired
     private CarRepository carRepository;
-
-    public List<Car> findNearbyCars(double latitude, double longitude, double radius) {
-        return carRepository.findNearbyCars(latitude, longitude, radius);
-    }
+//
+//    public List<Car> findNearbyCars(double latitude, double longitude, double radius) {
+//        return carRepository.findNearbyCars(latitude, longitude, radius);
+//    }
 
     public Car saveCar(Car car) {
         return carRepository.save(car);
@@ -25,9 +25,9 @@ public class CarService {
         return carRepository.findById(id);
     }
 
-    public Optional<Car> getAvailableCarById(Long id) {
-        return carRepository.findByIdAndAvailable(id, true);
-    }
+//    public Optional<Car> getAvailableCarById(Long id) {
+//        return carRepository.findByIdAndAvailable(id, true);
+//    }
 
     public void deleteCar(Car car) {
         carRepository.delete(car);

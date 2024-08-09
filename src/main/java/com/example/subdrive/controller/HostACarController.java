@@ -1,6 +1,6 @@
 package com.example.subdrive.controller;
 
-import com.example.subdrive.entities.Car;
+import com.example.subdrive.entity.Car;
 import com.example.subdrive.service.CarService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
