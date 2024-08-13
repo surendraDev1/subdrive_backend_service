@@ -15,4 +15,6 @@ public interface CarRepository extends JpaRepository<Car, Long> {
 //    List<Car> findNearbyCars(double latitude, double longitude, double radius);
 
 //    Optional<Car> findByIdAndAvailable(Long id, boolean available);
+
+    List<Car> findByLocationAndMakeAndPricePerDayBetween(String location, String make, double minPrice, double maxPrice);
 }

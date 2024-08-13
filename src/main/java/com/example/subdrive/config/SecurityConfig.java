@@ -26,7 +26,8 @@ public class SecurityConfig {
                                 "/test/hello",
                                 "/subdrive/login",
                                 "/swagger-ui/**",
-                                "/v3/api-docs/**"
+                                "/v3/api-docs/**",
+                                "/api/cars/**"
                         ).permitAll()
                         .anyRequest().authenticated()
                 )

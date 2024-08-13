@@ -32,4 +32,8 @@ public class CarService {
     public void deleteCar(Car car) {
         carRepository.delete(car);
     }
+
+    public List<Car> searchCars(String location, String make, double minPrice, double maxPrice) {
+        return carRepository.findByLocationAndMakeAndPricePerDayBetween(location, make, minPrice, maxPrice);
+    }
 }
