@@ -17,8 +17,7 @@ public class CarRepositoryTest {
 
     @Test
     public void testFindByLocationAndMakeAndPricePerDayBetween() {
-        List<Car> cars = carRepository.findByLocationAndMakeAndPricePerDayBetween("seattle", "Toyota", 30, 100);
-        System.out.println("Checking if list is empty: " + cars);
+        List<Car> cars = carRepository.findByLocationAndMakeAndPricePerDayBetween("Irving", "Toyota", 20, 100);
         assertFalse(cars.isEmpty());
     }
 }
